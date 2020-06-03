@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+lang="en" xml:lang="en">
+<head>
+<title>TRAVELBUDDY</title>
+    
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css2?family=Rasa:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
+    
+    
+<style type="text/css">
+/* BOILERPLATE STYLES */
+#outlook a{padding:0;}
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;}
+.ExternalClass, .ExternalClass span, .ExternalClass td, .ExternalClass div {line-height: 100%;}
+a {text-decoration: none;}
+body, table, td, a{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;}
+img {-ms-interpolation-mode:bicubic; display: block; height:auto; border:0; line-height:100%; outline:none; text-decoration:none;}
+body {height:100% !important; margin:0 !important; padding:0 !important; width:100% !important;}
+    
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwmhdu3cOWxy40.woff) format('woff');}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Source Sans Pro Regular'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xK3dSBYKcSV-LCoeQqfX1RYOo3qNa7lujVj9_mf.woff) format('woff');}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Source Sans Pro SemiBold'), local('SourceSansPro-SemiBold'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3i54rwmhdu3cOWxy40.woff) format('woff');}
+
+  @font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Source Sans Pro Bold'), local('SourceSansPro-Bold'), url(https://fonts.gstatic.com/s/sourcesanspro/v12/6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vwmhdu3cOWxy40.woff) format('woff');}
+    
+  @font-face {
+  font-family: 'Rasa', serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Rasa Normal'), local('RasaNormal'), url("https://fonts.googleapis.com/css2?family=Rasa&display=swap") format("truetype");
+   }
+
+  @font-face {
+  font-family: 'Rasa', serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Rasa Regular'), local('RasaRegular'), url("https://fonts.googleapis.com/css2?family=Rasa&display=swap") format("truetype");
+   }
+
+
+/* start STANDARD MOBILE RESPONSIVE STYLES */
+@media only screen and (max-width: 640px) {
+  .w100 { width: 100% !important; }
+}
+/* end STANDARD MOBILE RESPONSIVE STYLES */
+
+/* start HOVER EFFECTS */
+.fadeimg {
+  transition: 0.3s!important;
+  opacity: 1!important;
+}
+.fadeimg:hover {
+  transition: 0.3s!important;
+  opacity: 0.5!important;
+}
+    
+.fade-slow{ transition: 0.3s !important; } 
+.fade-slow:hover{ transition: 0.3s !important; opacity: 0.5 !important;}
+    
+/* end HOVER EFFECTS */
+
+/* start DARK MODE STYLES */
+
+/* end DARK MODE STYLES */
+
+/* start INTERACTIVE HOTSPOT STYLES */
+   
+    .wrapper-secondary {
+      max-height: 0px;
+      max-width: 0px;
+    }
+    .hot-tool-wrapper {
+      position: relative;
+      display: inline-block;
+      max-width: 0px;
+    }
+    .tooltip-content {
+      background-color: #021263;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.25);
+      color: #ffffff;
+      display: block;
+      font-family:'Source Sans Pro', Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 20px;
+      text-align: left;
+      padding: 15px;
+      border-radius: 5px;
+      opacity: .8;
+    }
+   
+    .tooltip-wrapper {
+      max-height: 0px;
+      opacity: 0;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .hot-tool-wrapper:hover .tooltip-wrapper {
+      max-height: none !important;
+      opacity: 1 !important;
+      transition: 0.3s;
+    }
+    
+    .cta{
+      background-color: #021263; 
+    }
+    
+    .cta:hover {
+      background-color: #020E4B;
+      transition: 0.3s !important;
+      box-shadow: none !important;
+    }
+    
+    /* START force fallback on all Outlook versions */
+    .outlookshow { display: none !important; }
+    body[data-outlook-cycle] 
+    .outlookshow { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+    body[data-outlook-cycle] 
+    .outlookhide { display:none !important; display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden; }
+    [class~="x_outlookshow"] { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+    [class~="x_outlookhide"] { display:none !important; display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden; }
+    /* end force fallback on all Outlook versions */
+
+    /* start MOBILE RESPONSIVE HOTSPOT STYLES */
+    @media only screen and (max-width: 480px) {
+        
+      .mobile_headline{
+        font-size: 45px!important;
+        line-height: 51px!important;}
+        
+      .mobile_subheadline{
+        font-size: 25px!important;
+        line-height: 30px!important;}
+        
+      .margin-top{ margin-top:0px!important;}
+        
+      .height{ height:180px!important;}
+        
+      .mobile-center{ text-align: center!important;}
+        
+      .wrapper-primary, .mainimg, .mainimg img{ width: 439px !important; height: 460px !important; margin: auto !important;}
+      .hot-tool-wrapper { margin-top: 0 !important; margin-left: 0 !important; }
+      .caret { display: none !important; }
+        
+      .germany { margin-left: 208px !important; margin-top: 18px !important; }
+      .germany + div { margin-left: 165px !important; margin-top: 138px !important; }
+        
+      .russia { margin-left: 295px !important; margin-top: 5px !important; }
+      .russia + div { margin-left: 160px !important; margin-top: 150px !important; }
+        
+      .india { margin-left: 310px !important; margin-top: 75px !important; }
+      .india + div { margin-left: 169px !important; margin-top: 80px !important; }
+        
+      .sweden { margin-left: 210px !important; margin-top: 0px !important; }
+      .sweden + div { margin-left: 160px !important; margin-top: 155px !important; }
+        
+      .spain { margin-left: 183px !important; margin-top: 35px !important; }
+      .spain + div { margin-left: 165px !important; margin-top: 120px !important; }
+        
+      .australia { margin-left: 375px !important; margin-top: 155px !important; }
+      .australia + div { margin-left: 165px !important; margin-top: 0px !important; }
+        
+      .namibia { margin-left: 210px !important; margin-top: 140px !important; }
+      .namibia + div { margin-left: 165px !important; margin-top: 15px !important; }
+    
+      .uruguay { margin-left: 98px !important; margin-top: 155px !important; }
+      .uruguay + div { margin-left: 160px !important; margin-top: 0px !important; }
+        
+      .canada { margin-left: 10px !important; margin-top: 5px !important; }
+      .canada + div { margin-left: 165px !important; margin-top: 150px !important; }
+        
+      .usa { margin-left: 25px !important; margin-top: 40px !important; }
+      .usa + div { margin-left: 165px !important; margin-top: 115px !important; }
+        
+        
+    }
+    /* end MOBILE RESPONSIVE HOTSPOT STYLES */
+/* end INTERACTIVE HOTSPOT STYLES */
+
+</style>
+
+<!--[if gte mso 9]><xml>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+  <o:PixelsPerInch>96</o:PixelsPerInch>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+
+</head>
+
+<body class="body darkmode-body" leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"
+    style="-webkit-font-smoothing:antialiased; width:100% !important; -webkit-text-size-adjust:none!important; margin: 0; padding: 0; mso-line-height-rule: exactly;text-align:center;background-color:#f2f2f2;" id="body">
+
+<!-- START force fallback on Yahoo -->
+<style>
+    .& #hello .yahoohide {display: none !important;}
+    .& #hello .yahooshow {display: block !important;}
+</style>
+<!-- END force fallback on Yahoo -->
+   
+ <table id="hello" role="article" aria-label="Interior Email" lang="en" cellpadding="0" cellspacing="0" border="0" style="width:100%; text-align:center; margin: 0 auto; table-layout: fixed;" align="center">
+     <tr>
+         <td class="darkmode-body" bgcolor="#f2f2f2">
+    
+             <!-- start CONTENT -->
+             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 700px;" align="center">
+                 <tr>
+                    <td align="center" class="darkmode-body" bgcolor="#ffffff" valign="top">
+             
+                        <!-- start LOGO -->
+                            <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 100px;">
+                                <tr>
+                                    <td align="center" valign="bottom" style="padding-top: 30px; padding-bottom: 30px">
+                                        <img src="https://i.imgur.com/RW2OeUp.png" alt="Travelbuddy" width="130" height="auto" style="display: block; color: #000000; font-size: 14px; letter-spacing: 2px; font-family: 'Source Sans Pro', Arial, sans-serif;background-color:#ffffff">
+                                    </td>
+                                </tr>
+                            </table>
+                        <!-- end LOGO -->
+                            
+               
+                        <table role="presentation" class="w100" cellpadding="0" cellspacing="0" border="0" style="width: 700px; max-width: 700px;">
+                         <!-- start Part 1 -->
+                          <tr>
+                            <td class="w100" align="center" style="width: 700px; max-width: 700px;" >
+
+    
+                            <!-- start HERO -->
+                            <div class="w100" style="margin: 0 auto; padding: 0; display:block; width:700px; max-width: 700px;" align="left">
+
+                            <!-- start SECTION_INTERACTIVE -->
+                                <!--[if !mso]><! -->
+                              
+                                <div class="yahoohide outlookhide w100 wrapper-primary" style="mso-hide:all !important; width:700px; height:733px;">
+                                    <div>
+                                      
+                                        <div class="wrapper-secondary">
+                                          <div class="mainimg" style="width:700px; height:733px; display:inline-block; text-align:center;background-color:#DCB18E;">
+                                            <a href="http://googlemaps.com" aria-hidden="true" style="pointer-events:none !important; cursor: default !important;">
+                                             <img src="https://i.imgur.com/RttZEOI.png" width="700" style="height: auto;" border="0" alt="" />
+                                            </a>
+                                          </div>
+                                        </div>
+                                        
+                                        <div class="margin-top" align="center">
+                                        <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                                            <tr><td height="45">&nbsp;</td></tr>
+                                            <tr>
+                                                <td align="center" style="padding-bottom: 30px;">
+                                                  <p style="font-size: 55px; text-align: center; word-break: break-word; font-family: 'Rasa', Georgia, 'Times New Roman', serif; mso-line-height-alt: 69px; margin: 0; color: #FFFFFF; letter-spacing: 2px;text-shadow: 1px 2px 8px rgba(0,0,0,0.55);">
+                                                   <span style="font-size: 55px;"><strong>Where to next?</strong></span>
+                                                  </p>
+                                                
+                                                  <p style="font-size: 16px; text-align: center; word-break: break-word; font-family: 'Source Sans Pro', Arial, sans-serif; mso-line-height-alt: 19px; margin: 0; color: #FFFFFF; font-weight: 500;text-shadow: 1px 2px 8px rgba(0,0,0,0.55);">
+                                                    <span style="font-size: 16px;">Find inspiration by hovering over the circles.</span>
+                                                  </p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                
+                                        <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top:135px; margin-left: 338px;">
+                                                <img class="germany" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:100px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0; font-weight: 600;">GERMANY</p><p style="padding: 0; margin: 0">Mainz</p><p style="padding: 0; margin: 0">Dresden</p><p style="padding: 0; margin: 0">Wiesbaden</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                          <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top:90px; margin-left: 510px;">
+                                                <img class="russia" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:-5px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:120px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">RUSSIA</p><p style="padding: 0; margin: 0">St Petersburg</p><p style="padding: 0; margin: 0">Jakutsk</p><p style="padding: 0; margin: 0">Kaliningrad</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top:227px; margin-left: 515px;">
+                                                <img class="india" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:-5px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:100px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">INDIA</p><p style="padding: 0; margin: 0">Jaipur</p><p style="padding: 0; margin: 0">Agra</p><p style="padding: 0; margin: 0">Mysore</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                         <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top:95px; margin-left: 350px;">
+                                                <img class="sweden" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:110px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">SWEDEN</p><p style="padding: 0; margin: 0">Gothenburg</p><p style="padding: 0; margin: 0">Ystad</p><p style="padding: 0; margin: 0">Lund</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 165px; margin-left: 305px;">
+                                                <img class="spain" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:100px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">SPAIN</p><p style="padding: 0; margin: 0">Girona</p><p style="padding: 0; margin: 0">Bilbao</p><p style="padding: 0; margin: 0">Mahon</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 355px; margin-left: 595px;">
+                                                <img class="australia" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:105px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">AUSTRALIA</p><p style="padding: 0; margin: 0">Cairns</p><p style="padding: 0; margin: 0">Hobart</p><p style="padding: 0; margin: 0">Darwin</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+               
+                                        
+                                        <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 325px; margin-left: 350px;">
+                                                <img class="namibia" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:120px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">NAMIBIA</p><p style="padding: 0; margin: 0">Windhoek</p><p style="padding: 0; margin: 0">Swakopmund</p><p style="padding: 0; margin: 0;;">Walvis Bay</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+               
+                                         <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 360px; margin-left: 155px;">
+                                                <img class="uruguay" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:120px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">URUGUAY</p><p style="padding: 0; margin: 0">Montevideo</p><p style="padding: 0; margin: 0">Piriápolis</p><p style="padding: 0; margin: 0;">Carmelo</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 130px; margin-left: 0px;">
+                                                <img class="canada" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:100px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">CANADA</p><p style="padding: 0; margin: 0">Montreal</p><p style="padding: 0; margin: 0">Calgary</p><p style="padding: 0; margin: 0">Halifax</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                         <div class="wrapper-secondary">
+                                            <div class="hot-tool-wrapper" style="margin-top: 180px; margin-left: 30px;">
+                                                <img class="usa" src="https://i.imgur.com/AaLQz5u.gif" width="40" style="margin-left:0px;" border="0" alt="" />
+                                                <div class="tooltip-wrapper" style="width:100px;">
+                                                    <img class="caret" src="https://i.imgur.com/rekJsCi.png" width="19" height="16" style="margin-top:0px; margin-left:10px; padding:0;" border="0" alt="" />
+                                                    <span class="tooltip-content"><p style="padding: 0; margin: 0;font-weight: 600;">USA</p><p style="padding: 0; margin: 0">Fremont</p><p style="padding: 0; margin: 0">Milwaukee</p><p style="padding: 0; margin: 0">Greenville</p></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                       
+                                    </div>
+
+                                </div>
+                                <!--<![endif]-->
+                                <!-- end SECTION_INTERACTIVE -->
+
+                              
+
+                                <!-- start SECTION_FALLBACK Animated or non-animated image with all infos -->
+                                <!--[if !mso]><! -->
+                                <div class="outlookshow yahooshow">
+                                    <!--<![endif]-->
+
+                                    <a href="https://" target="_blank">
+                                        <img src="https://i.imgur.com/6CQgni3.png" width="700" height="733" style="display: block; padding:0; margin:0; height: auto; max-width: 100%;" border="0" alt="Map" />
+                                    </a>
+
+                                    <!--[if !mso]><! -->
+                                </div>
+                                <!--<![endif]-->
+                                <!-- end SECTION_FALLBACK -->
+
+                        </div>
+                        <!-- end HERO -->
+                        </td>
+                      </tr>
+                       <!-- end Part 1 -->
+                     <tr>
+                        <td align="center" style="width: 700px; max-width: 700px;" >
+                        <div align="center">
+                             <!-- start BUTTON -->
+                                 <table cellspacing="0" cellpadding="0" border="0">
+                                      <tr>
+                                         <td align="center" style="padding-top: 40px;padding-bottom: 40px;padding-right: 40px;padding-left: 40px; border-radius: 5px;">
+                                           <a href="https://www.google.com/maps/@21.0235305,-11.3083361,3z" style="text-decoration: none;display:inline-block; mso-padding-alt:0; box-shadow:0 3px 6px rgba(0,0,0,.2);color:#ffffff; padding-top: 15px; padding-bottom: 15px; padding-right: 40px; padding-left: 40px; font-family: 'Source Sans Pro', sans-serif; font-size: 18px; line-height: 22px; border-radius: 5px;" class="cta">SEE MORE DESTINATIONS</a>
+                       
+                                          </td>
+                                      </tr>
+                                 </table>
+                              <!-- end BUTTON -->
+                         </div> 
+                         </td>
+                       </tr>     
+                       <!-- SEPARATOR -->
+                      <tr>
+                        <td height="60" style="font-size: 1px; line-height: 1px;">
+                            &nbsp;
+                        </td>  
+                      </tr>
+                            
+                       <!-- Article IMG TEXT -->
+                      <tr>
+                              <td align="center" height="100%" valign="top" width="100%" style="padding-bottom:60px">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                                <tr>
+                                <td align="center" valign="top" width="700">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
+                                    <td align="center" style="direction:ltr;">
+                                        
+                                        <div style="display:inline-block; max-width:40%; min-width:233px; vertical-align:top; width:100%; direction:ltr;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:233px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center"><img src="https://i.imgur.com/Y2BKjUc.png" width="233" class="fade-slow" style="background-color: #f2f2f2" alt="Patagonia image"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                              
+                                        <div style="display:inline-block; max-width:58%; min-width:400px; vertical-align:top; width:100%; direction:ltr;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width: 400px" width="100%">
+                                                <tr>
+                                                    <td style="font-family: 'Source Sans Pro', sans-serif; font-size: 35px; line-height: 45px; color:#000000; font-weight: 600; padding-right: 15px; padding-left: 15px;padding-top: 15px;padding-bottom: 10px;" class="mobile-center">Discover Patagonia</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family: 'Rasa',serif; font-size: 18px; line-height: 23px; color:#000000; font-weight: 300;padding-right:15px;padding-left: 15px;padding-top: 15px;padding-bottom: 15px;text-align: left;" class="mobile-center"> Patagonia is a sparsely populated region at the southern end of South America, shared by Argentina and Chile.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="mobile-center"><a href="https://en.wikipedia.org/wiki/Patagonia" style="font-family: 'Rasa',serif; font-size: 18px; line-height: 23px; color:#000000; font-weight: 400;padding-right: 15px;padding-left: 15px;padding-top: 15px;padding-bottom: 15px;text-decoration: underline;" class="fade-slow" target="_blank">Read more</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                    </td>
+                              </table>
+                          </td>
+                      </tr>
+                       
+                            
+                            
+                     <!-- Lines -->
+                    <tr>
+                       <td>
+                       <!--[if mso | ie]> 
+                       <table align="center" border="0" cellspacing="0" cellpadding="0" width="700"> 
+                        <tr> 
+                           <td align="center" valign="top"> 
+                             <![endif]-->
+                              <table cellspacing="0" cellpadding="0" border="0" width="100%" style="max-width:700px;">
+                                <tr>
+                                 <td align="center" valign="middle" style="max-width: 700px; padding-top:25px;padding-bottom:25px;" width="100%" bgcolor="#ffffff">
+                                   <img src="https://i.imgur.com/Odjc9Dy.png">
+                                 </td>
+                                </tr>
+                             </table>
+                             <!--[if mso | ie]> 
+                           </td> 
+                        </tr>
+                       </table> 
+                       <![endif]-->       
+                      </td>
+                    </tr>
+                    
+                
+                     <!-- SEPARATOR -->
+                      <tr>
+                        <td height="60" style="font-size: 1px; line-height: 1px;">
+                            &nbsp;
+                        </td>  
+                      </tr>
+                            
+                    
+                     <!-- Article TEXT IMG -->
+                      <tr>
+                              <td align="center" height="100%" valign="top" width="100%" style="padding-bottom:60px">
+                                <!--[if (gte mso 9)|(IE)]>
+                                <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                                <tr>
+                                <td align="center" valign="top" width="700">
+                                <![endif]-->
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
+                                    <td align="center" style="direction:rtl;">
+                                        <div style="display:inline-block; max-width:40%; min-width:233px; vertical-align:top; width:100%; direction:ltr; text-align: center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:233px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center"><img src="https://i.imgur.com/C6gkppe.png" width="233" class="fade-slow" alt="Tokyo image" style="background-color: #f2f2f2"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                       
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        <td align="right" valign="top" width="350">
+                                        <![endif]-->
+                                        <div style="display:inline-block; max-width:58%; min-width:400px; vertical-align:top; width:100%; direction:ltr;">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width: 400px" width="100%">
+                                                <tr>
+                                                    <td style="font-family: 'Source Sans Pro', sans-serif; font-size: 35px; line-height: 45px; color:#000000; font-weight: 600; padding-right: 15px; padding-left: 15px;padding-top: 15px;padding-bottom: 10px; text-align: left" class="mobile-center">Tokyo</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-family: 'Rasa',serif; font-size: 18px; line-height: 23px; color:#000000; font-weight: 300;padding-right:15px;padding-left: 15px;padding-top: 15px;padding-bottom: 15px; text-align: left" class="mobile-center">Tokyo is the capital and most populous prefecture of Japan. Located at the head of Tokyo Bay, the prefecture forms part of the Kantō region on the central Pacific coast of Japan's main island, Honshu.</td>
+                                                </tr>
+                                                 <tr>
+                                                    <td class="mobile-center" style="text-align: left;"><a href="https://en.wikipedia.org/wiki/Tokyo" style="font-family: 'Rasa',serif; font-size: 18px; line-height: 23px; color:#000000; font-weight: 400;padding-right: 15px;padding-left: 15px;padding-top: 15px;padding-bottom: 15px; text-align: right; text-decoration: underline;" class="fade-slow" target="_blank">Read more</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]--> 
+                                    </td>
+                              </table>
+                          </td>
+                      </tr>
+                            
+                       <!-- GALLERY -->
+                      <tr>
+                              <td align="center" height="100%" valign="top" width="100%" style="padding-bottom:60px">
+                                
+                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
+                                    <td align="center" style="padding-bottom: 5px;">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                                    <tr>
+                                    <td align="center" valign="top" width="350">
+                                    <![endif]-->
+                                        <div style="display:inline-block; max-width:49%; min-width:348px; vertical-align:top; width:100%; direction:ltr; text-align: center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:348px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center" style="font-family:'Source Sans Pro', sans-serif; letter-spacing: 1px; font-size: 35px; color: #ffffff; font-weight: 600;text-shadow: 1px 5px 6px rgba(0,0,0,0.75);background-color: antiquewhite; text-align: center;" background="https://i.imgur.com/5NyIYyQ.png" width="348" height="380" class="fadeimg"><a href="https://www.visitberlin.de/en" style="color: #ffffff;" target="_blank">BERLIN</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                       
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        <td align="right" valign="top" width="350">
+                                        <![endif]-->
+                                        <div style="display:inline-block; max-width:49%; min-width:348px; vertical-align:top; width:100%; direction:ltr; text-align: center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:348px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center" style="font-family:'Source Sans Pro', sans-serif; letter-spacing: 1px; font-size: 35px; color: #ffffff; font-weight: 600;text-shadow: 1px 5px 6px rgba(0,0,0,0.75);background-color: antiquewhite; text-align: center;" background="https://i.imgur.com/TcCDKqe.png" width="348" height="380" class="fadeimg"><a href="https://www.visitstockholm.com/" style="color: #ffffff;" target="_blank">STOCKHOLM</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]--> 
+                                    </td>
+                              </table>
+                              
+                               <table align="center" border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width:700px;">
+                                    <td align="center">
+                                    <!--[if (gte mso 9)|(IE)]>
+                                    <table align="center" border="0" cellspacing="0" cellpadding="0" width="700">
+                                    <tr>
+                                    <td align="center" valign="top" width="350">
+                                    <![endif]-->
+                                        <div style="display:inline-block; max-width:49%; min-width:348px; vertical-align:top; width:100%; direction:ltr; text-align: center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:348px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center" style="font-family:'Source Sans Pro', sans-serif; letter-spacing: 1px; font-size: 35px; color: #ffffff; font-weight: 600;text-shadow: 1px 5px 6px rgba(0,0,0,0.75);background-color: antiquewhite; text-align: center;" background="https://i.imgur.com/Xa7R45a.png" width="348" height="380" class="fadeimg"><a href="https://www.visitlisboa.com/en" style="color: #ffffff;" target="_blank">LISBON</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                       
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        <td align="right" valign="top" width="350">
+                                        <![endif]-->
+                                        <div style="display:inline-block; max-width:49%; min-width:348px; vertical-align:top; width:100%; direction:ltr; text-align: center">
+                                            <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="max-width:348px" width="100%" align="center">
+                                                <tr>
+                                                    <td align="top" valign="center" style="font-family:'Source Sans Pro', sans-serif; letter-spacing: 1px; font-size: 35px; color: #ffffff; font-weight: 600;text-shadow: 1px 5px 6px rgba(0,0,0,0.75); background-color: antiquewhite; text-align: center;" background="https://i.imgur.com/UrcUMM6.png" width="348" height="380" class="fadeimg"><a href="https://www.europeanbestdestinations.com/destinations/istanbul" style="color: #ffffff;" target="_blank">ISTANBUL</a></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        <!--[if (gte mso 9)|(IE)]>
+                                        </td>
+                                        </tr>
+                                        </table>
+                                        <![endif]--> 
+                                    </td>
+                              </table>
+                          </td>
+                      </tr>    
+                     
+                      
+                     <!-- end GALLERY -->
+                    </table>
+                    
+             
+                    </td>
+                 </tr>
+             </table>
+             
+              <!-- start FOOTER -->
+             <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 700px;" align="center" bgcolor="#ffffff">
+                 <tr>
+                     <td align="center" style="padding-bottom: 60px;">
+                         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width: 500px;" align="center">
+                             <tr>
+                                <td align="center" bgcolor="#ffffff" valign="top" style="font-family: 'Source Sans Pro', sans-serif; font-size: 14px; line-height: 20px; font-weight: 300;">
+                                     <a href="" style="text-decoration: underline">View online</a>
+                                        <br><br>
+                                    Abbey Wood Studio
+                                    LONDON, SE2, GB<br><br>
+                                   
+                                    You’re receiving this email because you signed up to receive updates from JMU. If you’d prefer not to receive updates, you can unsubscribe from all emails here.
+                                        <br><br>
+                                    © 2020 JMU. All rights reserved.
+                                 </td>
+                             </tr>
+                         </table>
+                                             
+                     </td>
+                     
+                 </tr>
+                 
+             </table>
+              <!-- end FOOTER -->
+         </td>
+    </tr> 
+</table>
+</body>
+</html>
