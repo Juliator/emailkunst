@@ -66,7 +66,7 @@ nav{
 }
 
 .logo{
-    width: 100%;
+    width: 20%;
 }
 
 .logo img{
@@ -74,6 +74,11 @@ nav{
     padding-right: 20px;
 }
 
+.nav_list{
+  width: 80%;
+  text-align: right;
+  text-transform: uppercase;
+}
 
 .points{
     text-transform: uppercase;
@@ -132,7 +137,7 @@ main{
 
 .gallery{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
@@ -278,4 +283,43 @@ footer{
   color: rgb(143, 143, 143);
   font-size: 14px;
   line-height: 24px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+  .container{
+    width: 100vw;
+  }
+
+  .navbar{
+    width: 100vw; /* vw instead of % for mobile devices */
+    flex-direction: column;
+  }
+
+  .logo{
+    padding-bottom: 15px;
+  }
+
+  .nav_list{
+    display: block;
+    text-align: center;
+  }
+
+  section{
+    padding-bottom: 0;
+   
+}
+
+.intro h1{
+  padding-bottom: inherit;
+  padding-top: 60px;
+  vertical-align: text-bottom;
+}
+
+.cr p{
+text-align: center;
+}
+
 }
